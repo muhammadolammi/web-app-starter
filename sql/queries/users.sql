@@ -42,9 +42,3 @@ SELECT EXISTS (
 );
 
 
--- name: AccessTokenExists :one
-SELECT EXISTS (
-    SELECT 1
-    FROM users
-    WHERE access_token = $1
-);

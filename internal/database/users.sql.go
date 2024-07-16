@@ -12,21 +12,6 @@ import (
 	"github.com/google/uuid"
 )
 
-const accessTokenExists = `-- name: AccessTokenExists :one
-SELECT EXISTS (
-    SELECT 1
-    FROM users
-    WHERE access_token = $1
-)
-`
-
-func (q *Queries) AccessTokenExists(ctx context.Context, accessToken sql.NullString) (bool, error) {
-	row := q.db.QueryRowContext(ctx, accessTokenExists, accessToken)
-	var exists bool
-	err := row.Scan(&exists)
-	return exists, err
-}
-
 const createUser = `-- name: CreateUser :one
 INSERT INTO users (
 first_name, last_name,
