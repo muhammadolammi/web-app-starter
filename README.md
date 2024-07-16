@@ -2,7 +2,7 @@
 This is a starter project for any webapp backend I want to build in GO.
 
 This uses GO-CHI this is a plugin built on the default http package.
-Although you can build this as  a fullstack app and make it monolith, but you kmow im just so used with microservices. Since firebase is free for react apps i love just building react frontend and make it static.
+Although you can build this as  a fullstack app and make it monolith, but you kmow im just to used with microservices. Since firebase is free for react apps i love just building react frontend and make it static.
 
 # External Packages used in this project, and should be enough to run all your server
 
@@ -12,7 +12,7 @@ Although you can build this as  a fullstack app and make it monolith, but you km
 
     for these golang packages after cloning the project run "go mod tidy"
 
-    I use sqlc to generate for my internal package 
+## I use sqlc to generate for my internal package 
     sqlc configuration is in "./sqlc.yaml"
     You can change your driver if you dont want to use postgres and thatbmean you change https://github.com/lib/pq to your desired driver.
 
