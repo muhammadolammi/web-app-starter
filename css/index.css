@@ -1,0 +1,101 @@
+
+html, body {
+   
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.page-header{
+  
+    height: 100px;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.main-flex{
+    margin-top: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Ensure it takes full width */
+    row-gap: 5px;
+  
+}
+
+.main-flex-child, .main-flex-child-2 {
+    margin: 10px;
+    background-color: rebeccapurple;
+    flex: 1; /* This makes each child take equal space in the row */
+    height: 100%; /* Ensures the children take the full height of the parent */
+}
+
+
+.main-flex-child, .main-flex-child-2{
+    span{
+        margin: 5px;
+       
+    }
+    .note{
+        span{
+            margin: 0;
+        }
+        margin: 5px;
+    }
+    p{
+        padding: 0;
+        margin: 10px;
+        color: green;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+  
+    /* Media query for mobile */
+  @media screen and (max-width:768px) {
+    p{
+        padding: 0;
+        color: green;
+        font-size: 20px;
+
+        font-weight: bold;
+    }
+    img{
+        height: 40px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+  } 
+
+  .aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    img{
+        height: 100px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+
+     /* Media query for mobile */
+  @media screen and (max-width:768px) {
+  
+    img{
+        height: 40px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+  } 
+  }
+   
+}
+
+
+
